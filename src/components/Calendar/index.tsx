@@ -1,4 +1,5 @@
 import { CaretLeft, CaretRight } from 'phosphor-react'
+import { useState } from 'react'
 import { getWeekDays } from '../../utils/get-week-days'
 import {
   CalendarActions,
@@ -10,6 +11,7 @@ import {
 } from './styles'
 
 export function Calendar() {
+  const [] = useState(new Date())
   const shortWeekDays = getWeekDays({ short: true })
 
   return (
