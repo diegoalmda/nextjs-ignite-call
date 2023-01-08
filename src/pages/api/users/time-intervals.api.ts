@@ -41,7 +41,7 @@ export default async function handler(
           week_day: interval.weekDay,
           time_start_in_minutes: interval.startTimeInMinutes,
           time_end_in_minutes: interval.endTimeInMinutes,
-          user_id: session.user?.id,
+          user_id: session.user.id,
         },
       })
     }),
